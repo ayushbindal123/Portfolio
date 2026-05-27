@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayush Bindal | Technical Content Writer</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -21,8 +22,8 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #050816;
-      color: white;
+      background: #f8fbff;
+      color: #0f172a;
       overflow-x: hidden;
     }
 
@@ -33,7 +34,7 @@
     }
 
     section {
-      padding: 90px 0;
+      padding: 100px 0;
     }
 
     h1, h2, h3 {
@@ -41,38 +42,44 @@
     }
 
     p {
-      color: #cbd5e1;
+      color: #475569;
       line-height: 1.8;
     }
 
     .btn {
-      display: inline-block;
-      padding: 14px 30px;
-      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 28px;
+      border-radius: 14px;
       text-decoration: none;
       font-weight: 600;
-      transition: 0.3s ease;
-      margin-right: 15px;
+      transition: all 0.35s ease;
       margin-top: 15px;
+      cursor: pointer;
     }
 
     .btn-primary {
-      background: #22d3ee;
-      color: black;
+      background: linear-gradient(135deg, #06b6d4, #2563eb);
+      color: white;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
     }
 
     .btn-primary:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(34, 211, 238, 0.3);
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 15px 35px rgba(37, 99, 235, 0.3);
     }
 
     .btn-secondary {
-      border: 1px solid rgba(255,255,255,0.2);
-      color: white;
+      background: white;
+      border: 1px solid #dbeafe;
+      color: #0f172a;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     }
 
     .btn-secondary:hover {
-      background: rgba(255,255,255,0.1);
+      transform: translateY(-5px);
+      background: #eff6ff;
     }
 
     .hero {
@@ -81,6 +88,7 @@
       align-items: center;
       position: relative;
       overflow: hidden;
+      background: linear-gradient(to bottom right, #eff6ff, #ffffff);
     }
 
     .hero::before {
@@ -88,45 +96,59 @@
       position: absolute;
       width: 500px;
       height: 500px;
-      background: rgba(34, 211, 238, 0.15);
+      background: rgba(59, 130, 246, 0.15);
       border-radius: 50%;
-      filter: blur(100px);
-      top: -100px;
+      top: -150px;
       right: -100px;
+      filter: blur(80px);
     }
 
     .hero-content {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 60px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 70px;
       align-items: center;
       position: relative;
-      z-index: 1;
+      z-index: 2;
     }
 
     .hero-text h4 {
-      color: #22d3ee;
-      letter-spacing: 3px;
-      margin-bottom: 15px;
+      color: #2563eb;
+      letter-spacing: 4px;
+      margin-bottom: 18px;
       text-transform: uppercase;
+      font-size: 14px;
     }
 
     .hero-text h1 {
-      font-size: 70px;
+      font-size: 72px;
       font-weight: 800;
       margin-bottom: 25px;
+      color: #0f172a;
     }
 
     .hero-text span {
-      color: #22d3ee;
+      color: #2563eb;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 10px;
+      max-width: 600px;
     }
 
     .hero-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.1);
-      backdrop-filter: blur(15px);
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255,255,255,0.5);
       padding: 40px;
-      border-radius: 30px;
+      border-radius: 35px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      transition: 0.4s ease;
+    }
+
+    .hero-card:hover {
+      transform: translateY(-8px);
     }
 
     .stats {
@@ -136,60 +158,70 @@
     }
 
     .stat-box {
-      background: rgba(255,255,255,0.05);
-      padding: 25px;
-      border-radius: 20px;
+      background: white;
+      padding: 28px;
+      border-radius: 22px;
       text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: 0.3s ease;
+    }
+
+    .stat-box:hover {
+      transform: translateY(-6px);
     }
 
     .stat-box h2 {
-      color: #22d3ee;
       font-size: 40px;
-      margin-bottom: 10px;
+      color: #2563eb;
+      margin-bottom: 8px;
     }
 
     .section-title {
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
 
     .section-title h2 {
-      font-size: 50px;
+      font-size: 52px;
+      color: #0f172a;
       margin-bottom: 15px;
     }
 
     .section-title span {
-      color: #22d3ee;
+      color: #2563eb;
     }
 
     .about-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 50px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 60px;
       align-items: center;
     }
 
     .skills {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 15px;
+      gap: 18px;
     }
 
     .skill-box {
-      background: rgba(255,255,255,0.05);
-      padding: 18px;
-      border-radius: 15px;
-      border: 1px solid rgba(255,255,255,0.08);
+      background: white;
+      padding: 20px;
+      border-radius: 18px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
       transition: 0.3s ease;
+      font-weight: 500;
     }
 
     .skill-box:hover {
-      border-color: #22d3ee;
-      transform: translateY(-4px);
+      transform: translateY(-6px);
+      border-color: #3b82f6;
+      background: #eff6ff;
     }
 
     .services {
-      background: rgba(255,255,255,0.03);
+      background: linear-gradient(to bottom right, #eff6ff, #ffffff);
     }
 
     .service-grid {
@@ -199,21 +231,34 @@
     }
 
     .service-card {
-      background: rgba(255,255,255,0.05);
+      background: white;
       padding: 35px;
-      border-radius: 25px;
-      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 28px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
       transition: 0.4s ease;
+      border: 1px solid #e2e8f0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(to right, #06b6d4, #2563eb);
+      left: 0;
+      top: 0;
     }
 
     .service-card:hover {
       transform: translateY(-10px);
-      border-color: #22d3ee;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.1);
     }
 
     .service-card i {
-      font-size: 45px;
-      color: #22d3ee;
+      font-size: 48px;
+      color: #2563eb;
       margin-bottom: 20px;
     }
 
@@ -223,11 +268,18 @@
     }
 
     .experience-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
+      background: white;
       padding: 40px;
-      border-radius: 25px;
-      margin-bottom: 25px;
+      border-radius: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+      border: 1px solid #e2e8f0;
+      transition: 0.3s ease;
+    }
+
+    .experience-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.08);
     }
 
     .experience-top {
@@ -240,24 +292,53 @@
     }
 
     .experience-top h3 {
-      font-size: 28px;
+      font-size: 30px;
+      color: #0f172a;
     }
 
     .experience-top span {
-      background: rgba(255,255,255,0.08);
+      background: #eff6ff;
       padding: 10px 18px;
       border-radius: 30px;
+      color: #2563eb;
       font-size: 14px;
-      color: #22d3ee;
+      font-weight: 600;
     }
 
     .experience-card ul {
       padding-left: 20px;
+      margin-bottom: 25px;
     }
 
     .experience-card ul li {
       margin-bottom: 12px;
-      color: #cbd5e1;
+      color: #475569;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #06b6d4, #2563eb);
+      color: white;
+      padding: 14px 22px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 10px 20px rgba(37,99,235,0.15);
+    }
+
+    .link-btn:hover {
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 15px 35px rgba(37,99,235,0.25);
     }
 
     .cta {
@@ -265,10 +346,11 @@
     }
 
     .cta-box {
-      background: linear-gradient(135deg, rgba(34,211,238,0.15), rgba(168,85,247,0.15));
-      padding: 70px 40px;
-      border-radius: 35px;
-      border: 1px solid rgba(255,255,255,0.1);
+      background: linear-gradient(135deg, #2563eb, #06b6d4);
+      color: white;
+      padding: 80px 40px;
+      border-radius: 40px;
+      box-shadow: 0 20px 50px rgba(37,99,235,0.2);
     }
 
     .cta-box h2 {
@@ -276,20 +358,28 @@
       margin-bottom: 25px;
     }
 
+    .cta-box p {
+      color: rgba(255,255,255,0.9);
+      max-width: 700px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
     footer {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding: 30px 0;
+      padding: 35px 0;
       text-align: center;
-      color: #94a3b8;
+      color: #64748b;
+      border-top: 1px solid #e2e8f0;
+      background: white;
     }
 
     @media(max-width: 768px) {
       .hero-text h1 {
-        font-size: 48px;
+        font-size: 50px;
       }
 
       .section-title h2 {
-        font-size: 38px;
+        font-size: 40px;
       }
 
       .cta-box h2 {
@@ -304,216 +394,249 @@
         grid-template-columns: 1fr;
       }
     }
+
   </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-content">
+<section class="hero">
+  <div class="container hero-content">
 
-      <div class="hero-text">
-        <h4>Technical Content Writer</h4>
+    <div class="hero-text">
+      <h4>Technical Content Writer</h4>
 
-        <h1>Ayush <span>Bindal</span></h1>
+      <h1>Ayush <span>Bindal</span></h1>
 
+      <p>
+        I create SEO-focused and research-driven content that ranks on Google and simplifies technical concepts into engaging and reader-friendly content.
+      </p>
+
+      <a href="#contact" class="btn btn-primary">
+        <i class="fa-solid fa-paper-plane"></i>
+        Hire Me
+      </a>
+
+      <a href="#experience" class="btn btn-secondary">
+        <i class="fa-solid fa-briefcase"></i>
+        View Experience
+      </a>
+    </div>
+
+    <div class="hero-card">
+      <div class="stats">
+
+        <div class="stat-box">
+          <h2>2.5+</h2>
+          <p>Years Experience</p>
+        </div>
+
+        <div class="stat-box">
+          <h2>100+</h2>
+          <p>Content Pieces</p>
+        </div>
+
+        <div class="stat-box">
+          <h2>SEO</h2>
+          <p>Optimized Content</p>
+        </div>
+
+        <div class="stat-box">
+          <h2>SaaS</h2>
+          <p>Content Specialist</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <div class="section-title">
+      <h2>About <span>Me</span></h2>
+      <p>I create content that improves rankings, engagement, and audience understanding.</p>
+    </div>
+
+    <div class="about-grid">
+
+      <div>
         <p>
-          I create SEO-focused and research-driven content that ranks on Google and simplifies complex technical topics into engaging and reader-friendly content.
+          I am a technical content writer with more than 2.5 years of experience creating SEO-focused blogs, SaaS documentation, technical guides, newsletters, LinkedIn articles, and conversion-driven content.
         </p>
 
-        <a href="#contact" class="btn btn-primary">Hire Me</a>
-        <a href="#experience" class="btn btn-secondary">View Experience</a>
+        <br>
+
+        <p>
+          My content strategy combines deep research, keyword analysis, competitor research, and user intent understanding to create content that performs exceptionally well on search engines.
+        </p>
       </div>
 
-      <div class="hero-card">
-        <div class="stats">
-          <div class="stat-box">
-            <h2>2.5+</h2>
-            <p>Years Experience</p>
-          </div>
-
-          <div class="stat-box">
-            <h2>100+</h2>
-            <p>Content Pieces</p>
-          </div>
-
-          <div class="stat-box">
-            <h2>SEO</h2>
-            <p>Optimized Content</p>
-          </div>
-
-          <div class="stat-box">
-            <h2>SaaS</h2>
-            <p>Tech Specialist</p>
-          </div>
-        </div>
+      <div class="skills">
+        <div class="skill-box">SEO Content Writing</div>
+        <div class="skill-box">Technical Documentation</div>
+        <div class="skill-box">SaaS Content</div>
+        <div class="skill-box">BOFU Blogs</div>
+        <div class="skill-box">How-to Guides</div>
+        <div class="skill-box">Case Studies</div>
+        <div class="skill-box">Keyword Research</div>
+        <div class="skill-box">Cloud Computing Content</div>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About Section -->
-  <section>
-    <div class="container">
+<section class="services">
+  <div class="container">
 
-      <div class="section-title">
-        <h2>About <span>Me</span></h2>
-        <p>I create content that improves visibility, engagement, and user understanding.</p>
+    <div class="section-title">
+      <h2>What I <span>Do</span></h2>
+      <p>I help technology brands create impactful content that drives traffic, engagement, and conversions.</p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service-card">
+        <i class="fa-solid fa-pen-nib"></i>
+        <h3>SEO Blogs</h3>
+        <p>Research-driven blogs designed to improve search rankings and organic traffic.</p>
       </div>
 
-      <div class="about-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-book"></i>
+        <h3>Technical Documentation</h3>
+        <p>Clear and user-friendly documentation for SaaS products and software platforms.</p>
+      </div>
 
+      <div class="service-card">
+        <i class="fa-brands fa-linkedin"></i>
+        <h3>LinkedIn Content</h3>
+        <p>Professional content for building authority and increasing audience engagement.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h3>Case Studies</h3>
+        <p>Result-oriented case studies showcasing customer success and business growth.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Work <span>Experience</span></h2>
+    </div>
+
+    <div class="experience-card">
+
+      <div class="experience-top">
         <div>
-          <p>
-            I am a technical content writer with more than 2.5 years of experience creating SEO-focused blogs, SaaS documentation, case studies, LinkedIn articles, newsletters, and technical content.
-          </p>
-
-          <br>
-
-          <p>
-            My approach combines deep research, SEO strategy, and audience understanding to create content that is informative, engaging, and conversion-focused.
-          </p>
+          <h3>Wilyer</h3>
+          <p>Technical Content Writer</p>
         </div>
 
-        <div class="skills">
-          <div class="skill-box">SEO Content Writing</div>
-          <div class="skill-box">Technical Documentation</div>
-          <div class="skill-box">SaaS Content</div>
-          <div class="skill-box">BOFU Blogs</div>
-          <div class="skill-box">How-to Guides</div>
-          <div class="skill-box">Case Studies</div>
-          <div class="skill-box">Keyword Research</div>
-          <div class="skill-box">Cloud Computing Content</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="services">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>What I <span>Do</span></h2>
-        <p>I help technology brands create impactful content that drives growth.</p>
+        <span>Dec 2025 - Present</span>
       </div>
 
-      <div class="service-grid">
+      <ul>
+        <li>Created SEO-optimized blogs and technical documentation.</li>
+        <li>Developed BOFU content focused on conversions and product positioning.</li>
+        <li>Produced how-to guides and knowledge base documentation.</li>
+      </ul>
 
-        <div class="service-card">
-          <i class="fa-solid fa-pen-nib"></i>
-          <h3>SEO Blogs</h3>
-          <p>Research-driven blogs designed to improve search rankings and audience engagement.</p>
-        </div>
+      <div class="button-group">
+        <a href="https://wilyer.com/blog" target="_blank" class="link-btn">
+          <i class="fa-solid fa-blog"></i>
+          View Blogs
+        </a>
 
-        <div class="service-card">
-          <i class="fa-solid fa-book"></i>
-          <h3>Technical Documentation</h3>
-          <p>Clear and user-friendly documentation for SaaS products and software tools.</p>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-brands fa-linkedin"></i>
-          <h3>LinkedIn Content</h3>
-          <p>Professional thought-leadership content for brand visibility and authority.</p>
-        </div>
-
-        <div class="service-card">
-          <i class="fa-solid fa-chart-line"></i>
-          <h3>Case Studies</h3>
-          <p>Result-driven case studies showcasing customer success and business impact.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience -->
-  <section id="experience">
-    <div class="container">
-
-      <div class="section-title">
-        <h2>Work <span>Experience</span></h2>
-      </div>
-
-      <div class="experience-card">
-        <div class="experience-top">
-          <div>
-            <h3>Wilyer</h3>
-            <p>Technical Content Writer</p>
-          </div>
-
-          <span>Dec 2025 - Present</span>
-        </div>
-
-        <ul>
-          <li>Created SEO-optimized blogs and technical documentation.</li>
-          <li>Developed BOFU content focused on conversions and product positioning.</li>
-          <li>Produced product guides and knowledge base articles.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <div class="experience-top">
-          <div>
-            <h3>Cloud Minister</h3>
-            <p>Technical Content Writer</p>
-          </div>
-
-          <span>Aug 2025 - Nov 2025</span>
-        </div>
-
-        <ul>
-          <li>Wrote cloud computing blogs, newsletters, and topic clusters.</li>
-          <li>Created LinkedIn articles and technical case studies.</li>
-          <li>Simplified technical cloud concepts into reader-friendly content.</li>
-        </ul>
-      </div>
-
-      <div class="experience-card">
-        <div class="experience-top">
-          <div>
-            <h3>Tuitor Drive IT Solution</h3>
-            <p>Technical Content Writer</p>
-          </div>
-
-          <span>Jan 2024 - July 2025</span>
-        </div>
-
-        <ul>
-          <li>Created technical documentation and educational content.</li>
-          <li>Converted technical concepts into easy-to-understand content.</li>
-          <li>Delivered high-quality content within deadlines.</li>
-        </ul>
+        <a href="https://wilyer.com/digital-signage-guide" target="_blank" class="link-btn">
+          <i class="fa-solid fa-book-open"></i>
+          View How to Guides
+        </a>
       </div>
 
     </div>
-  </section>
 
-  <!-- CTA -->
-  <section class="cta" id="contact">
-    <div class="container">
+    <div class="experience-card">
 
-      <div class="cta-box">
-        <h2>Let’s Create Content That Performs</h2>
+      <div class="experience-top">
+        <div>
+          <h3>Cloud Minister</h3>
+          <p>Technical Content Writer</p>
+        </div>
 
-        <p>
-          I help SaaS and technology brands create high-quality content that improves visibility, engagement, and conversions.
-        </p>
+        <span>Aug 2025 - Nov 2025</span>
+      </div>
 
-        <a href="mailto:bindalayush397@gmail.com" class="btn btn-primary">Contact Me</a>
+      <ul>
+        <li>Wrote cloud computing blogs, newsletters, and topic clusters.</li>
+        <li>Created LinkedIn articles and technical case studies.</li>
+        <li>Simplified technical cloud concepts into reader-friendly content.</li>
+      </ul>
+
+      <div class="button-group">
+        <a href="https://cloudminister.com/server-management/" target="_blank" class="link-btn">
+          <i class="fa-solid fa-globe"></i>
+          View Web Page
+        </a>
       </div>
 
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2026 Ayush Bindal | Technical Content Writer | SEO Content Strategist</p>
+    <div class="experience-card">
+
+      <div class="experience-top">
+        <div>
+          <h3>Tuitor Drive IT Solution</h3>
+          <p>Technical Content Writer</p>
+        </div>
+
+        <span>Jan 2024 - July 2025</span>
+      </div>
+
+      <ul>
+        <li>Created technical documentation and educational content.</li>
+        <li>Converted technical concepts into easy-to-understand content.</li>
+        <li>Delivered high-quality content within deadlines.</li>
+      </ul>
+
     </div>
-  </footer>
+
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="container">
+
+    <div class="cta-box">
+      <h2>Let’s Create Content That Performs</h2>
+
+      <p>
+        I help SaaS and technology brands create high-quality content that improves rankings, engagement, and conversions.
+      </p>
+
+      <a href="mailto:bindalayush397@gmail.com" class="btn btn-secondary">
+        <i class="fa-solid fa-envelope"></i>
+        Contact Me
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© 2026 Ayush Bindal | Technical Content Writer | SEO Content Strategist</p>
+  </div>
+</footer>
 
 </body>
 </html>
